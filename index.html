@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- page tittle -->
+        <title>Pet Shelter</title>
+        <!-- linking bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!-- linking css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- linking bootstrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </head>
+
+    <body>
+        <!-- nav bar -->
+        <div class=" nav_container d-flex">
+            <!-- empty column for indentation -->
+            <div class="col"></div>
+            <!-- nav_content -->
+            <div class="nav_center col-10">
+                <!-- top row -->
+                <div class="row mt-3 ms-0 me-0 d-flex align-items-baseline ">
+                    <!-- logo -->
+                    <div class="logo col-7"> 
+                        <img class="heart" src="/img/heart-light.png" alt="">
+                        Pet Shelter
+                    </div>
+                    <!-- nav items -->
+                    <div class=" nav_placing col-5  ms-0 me-0 ps-0 pe-0 d-flex align-items-baseline " id="nav_layout">
+                        <div class="nav_items "> Find a Pet</div>
+                        <div class="nav_items "> About</div>
+                        <button class="donate me-0 ms-0 ps-2 pe-2" onclick="remove_donate(this)">Donate</button>
+                    </div>
+                </div>
+                <!-- bottom row -->
+                <div class="row mt-3 mb-3 me-0 ms-0 ps-0 pe-0 d-flex  justify-content-between ">
+                    <!-- col-left -->
+                    <div class="nav_text d-flex flex-column col-4 ps-0 pe-0 ms-0 me-0 ">
+                        I'm looking for a...
+                        <div class=" d-flex"> 
+                            <!-- importing paw picture -->
+                            <img class="paw" src="img/paw-light.png" alt="">
+                            <!-- select -->
+                            
+                                <select onchange="choose(this)" class="selec_btn" name="animals" id="animal">
+                                    <option value="Any Pet">Any Pet</option>
+                                    <option value="Dog">Dog</option>
+                                    <option value="Cat">Cat</option>
+                                </select>
+                            
+                        </div>
+                    </div>
+                    <!-- col-center -->
+                    <div class="nav_text d-flex flex-column col-4 ps-0 pe-0">
+                        <div class=" in_or_near d-flex justify-content-center"> In or near...</div>
+                        <div class=" d-flex justify-content-center"> 
+                            <!-- importing paw picture -->
+                            <img class="paw" src="img/pin-light.png" alt="">
+                            <!-- text input -->
+                            <form action="" class="d-flex justify-content-center">
+                                <input class="input_block" type="text" id="location" placeholder="City or Zip Code"> 
+                            </form>
+                        </div>
+                    </div>
+                    <!-- find best friend button -->
+                    <div class=" col-4 ps-0 pe-0 d-flex align-items-end justify-content-end">
+                        <button class="fbf_btn d-flex"> Find your new best friend</button>
+                    </div>
+                        
+
+                </div>
+            </div>
+            <!-- empty column for indentation  -->
+            <div class="col"></div>
+        </div>
+        <div class="content-container d-flex">
+            <!-- empty column (left) -->
+            <div class="col"></div>
+            <!-- center column -->
+            <div class="col-10">
+                <!-- First animal -->
+                <div class="row content ms-0 me-0 ps-0 pe-0 mt-5">
+                    <!-- image (left) -->
+                    <div class=" col-3 ms-0 me-0 ps-0 pe-0 d-flex align-content-center justify-content-center">
+                        <img class="images" src="/img/pepper.jpg" alt="">
+                    </div>
+                    <!-- center content -->
+                    <div class=" col-6 ms-0 me-0 ps-0 pe-0 d-flex flex-column justify-content-center">
+                        <div class="pet_tittle  mb-3 ms-3">
+                            Pepper
+                        </div>
+                        <div class=" pet_content ms-3 me-3 ">
+                            Pepper is a slightly shy grey tabby, but she really loves showing her human affection.
+                        </div>
+                    </div>
+                    <!-- pettings (right) -->
+                    <div class=" col-3 ms-0 me-0 ps-0 pe-0 d-flex flex-column justify-content-center">
+                        <!-- # pettings text -->
+                        <div class=" col-12 me-4  d-flex justify-content-end" id="pettings1"> 
+                            <span class=" petting_text me-1">0</span>
+                            <div class=" petting_text me-4">petting(s)</div>
+                        </div>
+                        <!-- pet peper btn -->
+                        <div class=" col-12 d-flex  me-0 ms-0 ps-0 pe-0 justify-content-end ">
+                            <button class="pet_btn me-4 " onclick="add_pettings1(this)">Pet Pepper</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Second Animal -->
+                <div class="row content2 ms-0 me-0 ps-0 pe-0 mt-5">
+                    <!-- image (left) -->
+                    <div class=" col-3 ms-0 me-0 ps-0 pe-0 d-flex align-content-center justify-content-center">
+                        <img class="images" src="/img/bruce.jpg" alt="">
+                    </div>
+                    <!-- center content -->
+                    <div class=" col-6 ms-0 me-0 ps-0 pe-0 d-flex flex-column justify-content-center">
+                        <div class="pet_tittle  mb-3 ms-3">
+                            Bruce
+                        </div>
+                        <div class=" pet_content ms-3 me-3 ">
+                            Bruce is a loyal companion. He loves long walks and cold weather.
+                        </div>
+                    </div>
+                    <!-- pettings (right) -->
+                    <div class=" col-3 ms-0 me-0 ps-0 pe-0 d-flex flex-column justify-content-center">
+                        <!-- # pettings text -->
+                        <div class=" col-12 me-4  d-flex justify-content-end" id="pettings2"> 
+                            <span class=" petting_text me-1">0</span>
+                            <div class=" petting_text me-4">petting(s)</div>
+                        </div>
+                        <!-- pet peper btn -->
+                        <div class=" col-12 d-flex  me-0 ms-0 ps-0 pe-0 justify-content-end ">
+                            <button class="pet_btn me-4 " onclick="add_pettings2(this)">Pet Bruce</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Third Animal -->
+                <div class="row content ms-0 me-0 ps-0 pe-0 mt-5 mb-5">
+                    <!-- image (left) -->
+                    <div class=" col-3 ms-0 me-0 ps-0 pe-0 d-flex align-content-center justify-content-center">
+                        <img class="images" src="/img/oscar.jpg" alt="">
+                    </div>
+                    <!-- center content -->
+                    <div class=" col-6 ms-0 me-0 ps-0 pe-0 d-flex flex-column justify-content-center">
+                        <div class="pet_tittle  mb-3 ms-3">
+                            Oscar
+                        </div>
+                        <div class=" pet_content ms-3 me-3 ">
+                            Oscar is Bright, energetic and friendly. He is looking for a good home.
+                        </div>
+                    </div>
+                    <!-- pettings (right) -->
+                    <div class=" col-3 ms-0 me-0 ps-0 pe-0 d-flex flex-column justify-content-center">
+                        <!-- # pettings text -->
+                        <div class=" col-12 me-4  d-flex justify-content-end" id="pettings3"> 
+                            <span class=" petting_text me-1">0</span>
+                            <div class=" petting_text me-4">petting(s)</div>
+                        </div>
+                        <!-- pet peper btn -->
+                        <div class=" col-12 d-flex  me-0 ms-0 ps-0 pe-0 justify-content-end ">
+                            <button class="pet_btn me-4 " onclick="add_pettings3(this)"> Pet Oscar</button>
+                        </div>
+                        
+                    </div>
+
+                    
+
+
+                </div>
+            </div>
+            <!-- empty column (right) -->
+            <div class="col"></div>
+        </div>
+        <!--bootstrap javascript  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <!-- linking my javascript -->
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+/*  Font for entire webpage */
+* {
+    font-family:helvetica
+}
+
+/* for visualizing blocks */ 
+/* .col, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7 ,.col-10 , .col-12 {
+    border: 0.1rem solid black;
+}  */
+
+    /* nav-bar css */
+    .nav_container { 
+        background-color: rgb(17,155,157);
+        height: 11rem;
+        border: 0.2rem solid black
+
+    }
+    .logo {
+        color: white;
+        font-size: 2.25rem;
+
+    }
+
+    .heart{ 
+        height: 3rem;
+        width: 3rem;
+
+    }
+
+    .nav_items {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .donate { 
+        background-color: white;
+        font-size: 1.5rem;
+        color: rgb(153,0,255) ;
+        border: 0.2rem solid rgb(153,0,255) ;
+        border-radius: 50%;
+        padding-top:0.25rem ;
+        padding-bottom: 0.25rem ;
+        font-weight: bold;
+
+    }
+
+    .selec_btn {
+        background-color: white;
+        font-weight: bold;
+        color:black;
+        height: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 4rem;
+        border: 0.15rem solid black;
+    }
+
+    .input_block {
+        height: 2rem;
+        border: 0.15rem solid black;
+        font-weight: bold;
+    }
+    .nav_text {
+        color: white;
+    }
+    .nav_placing{
+        justify-content: space-between;
+    }
+    .paw {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 0.5rem;
+
+    }
+    .fbf_btn { 
+        background-color: rgb(153,0,255);
+        color: white;
+        font-weight: normal;
+        font-size: 1.4rem;
+        height: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1.8rem;
+        border: 0.2rem solid black;
+        box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+
+    }
+    .in_or_near {
+        margin-left: -10rem;
+    }
+
+    /* content css */
+
+    .content {
+        background-color: rgb(241, 238, 238);
+        height: auto;
+        border-radius: 3rem;
+    }
+
+    .content2 {
+        background-color: lightgray;
+        height: auto;
+        border-radius: 3rem;
+    }
+
+    .images {
+        height: 13rem;
+        width: 13rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0.1rem solid black;
+    }
+    .pet_tittle{
+        font-size: xx-large;
+        font-weight: bold;
+    }
+    
+    .pet_content {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .pet_btn {
+
+        background-color: rgb(23,207,209);
+        color: white;
+        font-weight: normal;
+        font-size: 1.4rem;
+        height: 2rem;
+        width: 15rem;
+        /* padding-left: 5rem;
+        padding-right: 5rem; */
+        padding-bottom: 1.8rem;
+        border: 0.2rem solid black;
+        box-shadow: 0.2rem 0.2rem 0rem 0rem black;
+    
+    }
+
+    .petting_text {
+        font-size: 1.2rem;
+    }
+    
